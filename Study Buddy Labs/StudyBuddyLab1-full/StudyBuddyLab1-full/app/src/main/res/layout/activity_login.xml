@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to StudyBuddy"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/login_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/login_user"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:id="@+id/login_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username or password is invalid! Please verify and try again!"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/login_password"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/login_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_error_message"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textSize="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you are not yet registered click here"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:layout_below="@+id/login_login_button"
+        android:textColor="@color/colorPrimary"
+        android:padding="15dp"/>
+</RelativeLayout>
