@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/profile_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:hint="Full name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_user"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_email"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:hint="Phone number"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/rating_math_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_phone"
+            android:layout_marginTop="20dp"
+            android:text="Math rating"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_math_title"
+            android:layout_marginTop="20dp"
+            android:stepSize="1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/rating_android_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bar_math"
+            android:layout_marginTop="20dp"
+            android:text="Android rating"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_android_title"
+            android:layout_marginTop="20dp"
+            android:stepSize="1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/rating_java_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bar_android"
+            android:layout_marginTop="20dp"
+            android:text="Java rating"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_java_title"
+            android:layout_marginTop="20dp"
+            android:stepSize="1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/rating_ios_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bar_java"
+            android:layout_marginTop="20dp"
+            android:text="IOS rating"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_ios_title"
+            android:layout_marginTop="20dp"
+            android:stepSize="1"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/profile_save_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save data"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/rating_bar_ios"/>
+
+        <Button
+            android:id="@+id/profile_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/profile_save_data"/>
+    </RelativeLayout>
+</ScrollView>
