@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/email"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:textSize="16sp"
+        android:id="@+id/math_label"
+        android:text="Math rating"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/math_rating_bar"
+        android:layout_toLeftOf="@+id/math_rating_bar"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/email"
+        android:isIndicator="true"
+        android:id="@+id/math_rating_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/math_rating_bar"
+        android:textSize="16sp"
+        android:id="@+id/android_label"
+        android:text="Android rating"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/android_rating_bar"
+        android:layout_alignBottom="@+id/android_rating_bar"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/math_rating_bar"
+        android:isIndicator="true"
+        android:id="@+id/android_rating_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/android_rating_bar"
+        android:textSize="16sp"
+        android:id="@+id/java_label"
+        android:text="Java rating"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/java_rating_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/java_rating_bar"
+        android:gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/android_rating_bar"
+        android:isIndicator="true"
+        android:id="@+id/java_rating_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/java_rating_bar"
+        android:textSize="16sp"
+        android:id="@+id/ios_label"
+        android:text="iOS rating"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/ios_rating_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ios_rating_bar"
+        android:gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/java_rating_bar"
+        android:isIndicator="true"
+        android:id="@+id/ios_rating_bar"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Match"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:textColor="@drawable/button_text_color"
+        android:layout_below="@+id/ios_rating_bar"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/match_button"
+        />
+
+
+</RelativeLayout>
